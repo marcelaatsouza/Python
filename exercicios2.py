@@ -22,12 +22,12 @@ print("A velocidade média de um carro que viaja de uma cidade para a outra é d
 a = float(input("Digite o valor de a: "))
 b = float(input("Digite o valor de b: "))
 c = float(input("Digite o valor de c: "))
-discriminante = b**2 - 4*a*c
-if(discriminante < 0):
+delta = b**2 - 4*a*c
+if(delta < 0):
     print("Não possui raízes reais.")
 else:
-    raiz1 = (-b + discriminante**0.5) / (2*a)
-    raiz2 = (-b - discriminante**0.5) / (2*a)
+    raiz1 = (-b + delta**0.5) / (2*a)
+    raiz2 = (-b - delta**0.5) / (2*a)
     print("As raízes da equação são:", raiz1, "e", raiz2)
 
 # 5. Escreva um programa em Python que leia a cotação dodólar (taxa de conversão), leia um valor em dólares e converta e mostre o valor equivalente em Reais.
